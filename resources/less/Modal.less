@@ -1,0 +1,44 @@
+.modal {
+  background: fade(#333, 85%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  transition: 250ms ease;
+  transform: scale(0.7);
+  opacity: 0;
+
+  &.active {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .modal-content {
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    color: #FFF;
+    font-size: 45px;
+    line-height: 1;
+    font-weight: lighter;
+    transform: rotate(45deg);
+    transition: 200ms ease;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

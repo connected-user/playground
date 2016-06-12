@@ -1,0 +1,241 @@
+@import "fontWeights";
+@import "colors";
+
+#ri-profile-page{
+	
+    margin-top: -19px;
+    margin-right: 299px;
+    margin-bottom: 0px;
+    margin-left: 300px;
+    background: white;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    height: 100%;
+
+	#ri-profile-top{
+
+		display: inline-block;
+	    width: 100%;
+	    position: relative;
+	    padding-bottom: 20px;
+	    padding-left: 20px;
+	    padding-top: 19px;
+	    border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+
+		#profile-pic{
+
+			float:left;
+			height:120px;
+
+			#profile-pic-missing{
+
+			}
+
+		}
+
+
+		#profile-name{
+
+			font-size: 50px;
+    		color: #525252;
+		    font-weight: 100;
+		    position: absolute;
+		    margin-left: 140px;
+		    line-height: 120px;
+		    border-left: 1px dashed #ffcc00;
+		    padding-left: 17px;
+
+		    #profile-follow{
+
+		    	position: absolute;
+			    bottom: 0;
+			    left: 20px;
+			    background: white;
+			    border: 1px solid @colorYellow;
+			    height: 30px;
+			    color: @colorYellow;
+			    font-size: 15px;
+			    font-family: 'Yantramanav';
+			    font-weight: 500;
+			    -webkit-transition: border-style 0.5s;
+			    transition: border-style 0.5s;
+                padding-left: 8px;
+                padding-right: 8px;
+			    
+                .profile-reset-text{
+                    line-height:0;
+
+                }
+
+		    }
+		    #profile-follow:hover{
+
+			    border-style: dashed;
+			    }
+
+
+		    #profile-followers{
+			    position: absolute;
+			    color: #FFCC00;
+			    font-family: 'Yantramanav';
+			    font-weight: 300;
+			    font-size: 18px;
+			    top: 28px;
+			    left: 87px;
+			    width: 100%;
+			    height: 18px;
+
+			    #followers-value{
+
+
+
+			    }
+
+                #profile-controls{
+                    margin-left:20px;
+
+                    #profile-reset{
+                    background-color:white;
+                    color:@colorYellow;
+                    font-family:'Yantramanav';
+                    font-size:18px;
+                    font-weight:300;
+                    width:100%;
+                    border:1px solid @colorYellow;
+                    }
+
+
+                }
+
+		    }
+    		
+		}
+    }
+
+    #ri-profile-body{
+
+    	padding-left: 20px;
+    	margin-top: -5px;
+    	height: 100%;
+	    border-top: 1px solid white;
+	    padding-top: 18px;
+
+    	#profile-info{
+
+			font-weight: 300;
+			font-size: 20px;
+			color: #525252;
+			background: #fafafa;
+			border-left: 1px dashed #ccc;
+			padding-left: 10px;
+			padding-top: 3px;
+			padding-bottom: 3px;
+			width: 65%;
+    		.profile-quotes{
+
+    		color:@colorYellow;
+
+    		}
+
+    		#quote-right{
+
+	    		color:@colorYellow;
+	    		font-weight:100;
+	    		font-size: 30px;
+    			font-family: serif;
+    		}
+
+    		#quote-left{
+
+    			color:@colorYellow;
+    			font-weight:100;
+    			font-size: 30px;
+    			font-family: serif;
+    		}
+    	}
+
+    	#profile-data{
+    		
+    		color: #525252;
+
+    		#profile-data-item{
+
+    			margin-top:40px;
+
+    			#profile-favorites{
+    				display:inline-flex;
+    				width:100%;
+
+    				.profile-favorite-item{
+
+    					width:33%;
+
+    					margin:5px;
+    					margin-top:5px;
+    					margin-left:0px;
+    					height:150px;
+    					width:150px;
+    					border: 1px solid #ccc;
+
+                        .favorite-image{
+                        
+                        width:120px;
+                        height:120px;
+
+                        }
+
+    				}
+
+
+    			}
+
+
+    			#profile-data-title{
+
+    				font-size: 20px;
+    				color: #525252;
+    				font-weight: 300;
+    				text-transform: capitalize;
+    				float: left;
+    				margin-right: 5px;
+   					border-bottom: 1px dashed #ccc;
+
+   				}
+
+    			#profile-data-list{
+
+    				display: inline-block;
+    				font-weight: 100;
+    				font-size: 22px;
+    				}
+
+    				#profile-data-value{
+
+    				line-height: 29px;
+					font-weight: 100;
+    				font-size: 22px;
+    				}
+
+
+    				
+
+
+
+    			}
+
+    		}
+
+    	}
+
+    #ri-profile-footer{
+    position:absolute;
+    
+
+    }
+
+
+    }
+
+
+
+

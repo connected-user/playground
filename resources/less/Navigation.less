@@ -1,0 +1,309 @@
+@import "colors";
+@import "mediaQuery";
+@import "fontWeights";
+
+@keyframes glow {
+    0% {
+    border-color: #ffcc00;
+    
+    } 
+    100% {
+    border-color: #fbff00;
+    
+    }
+}
+
+.ri-top-navigation  {
+padding-left: 184px;
+  & > * {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  ul:not(.ri-login-dropdown) {
+    margin: 14px 0 0 50px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 10px;
+
+    li {
+      display: inline-block;
+    }
+
+    a, a:visited {
+      color: #222;
+      text-decoration: none;
+      margin: 0 10px 0 0;
+      padding: 2px 8px;
+      border-radius: 20px;
+      border: 1px solid transparent;
+          font-weight: 300;
+    font-family: 'Yantramanav';
+    font-size: 13px;
+    }
+
+
+
+}
+    a.active {
+      position: relative;
+      color: @colorYellow;
+     
+
+      &:after{
+        position: absolute;
+        bottom: -6px;
+        left: 40%;
+
+        content: "";
+        width: 0;
+        height: 0;
+        
+      }
+    }
+
+    @media @medium {
+
+      display: none;
+
+      li {
+
+        display: block;
+        padding: 5px;
+
+      }
+    }
+  }
+
+  .ri-logo {
+
+    width: 64px;
+    height: 33px;
+    margin: 5px 0 0 25px;
+    background: url("../images/rise-logo.svg") no-repeat;
+    background-size: 95%;
+
+    @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      background: url("../images/rise-logo-2x.png") no-repeat;
+      background-size: 95%;
+    }
+  }
+
+  .ri-search-bar {
+    float: right;
+    position: relative;
+    margin-top: 6px;
+    margin-right: 5px;
+    
+    
+    .icon-search {
+      color: #666;
+      position: absolute;
+      top: 7px;
+      left: 7px;
+      font-size: 16px;
+    }
+
+    .search-input {
+
+      width: 130px;
+      padding: 4px 10px 4px 30px;
+      border: 1px solid #BBB;
+      background: white;
+      border-radius: 0px;
+      font-size: 15px;
+      transition: 250ms ease;
+      font-family: 'Yantramanav';
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      height: 30px;
+      font-weight: 300;
+      line-height: 15px;
+
+      &:focus {
+
+        outline: none;
+        width: 180px;
+        animation: glow 800ms ease-out infinite alternate;
+        
+
+
+
+  
+ 
+      }
+    }
+  }
+.ri-profile-cntrlpanel{
+  
+
+  float:right;
+  width: 200px;
+  text-align: center;
+  height: 100%;
+  border-left: 1px dashed #ccc;
+
+    #icon-profile{
+
+      color: black;
+      margin-top: 10px;
+      font-size: 20px;
+      margin-right: 8px;
+      margin-left: 16px;
+
+    }
+
+
+    #ri-profile-login{
+  
+      color:black;
+     
+      font-size: 12px;
+      margin-right: 8px;
+      line-height: 12px;
+      margin-top: 13.5px;
+      text-decoration:none;
+      font-family:'Yantramanav';
+  font-weight:300;
+    }
+
+
+    #ri-profile-login:hover{
+
+      
+
+    }
+
+
+}
+
+
+
+.dropdown {
+    display: inline-block;
+        width: 199px;
+}
+
+.dropdown__content {
+    display: none;
+    position: absolute;
+        width: 200px;
+        border-left: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    margin-left: -1px;
+}
+
+.dropdown--active .dropdown__content {
+    display: block;
+}
+dropdown_classes{
+  
+  width:100%;
+}
+
+.ri-login-dropdown{
+  
+background: transparent;
+margin-top: 16px;
+
+}
+.ri-login-dropdown-segment{
+height:42px;
+border: 0;
+background: transparent;
+}
+
+.dropdown-input-segment{
+  
+
+
+.loginInput{
+  
+height:42px;
+width:100%;
+border:0;
+background: rgba(255, 255, 255, 0.42);
+padding-left: 15px;
+    color: #525252;
+font-family:'Yantramanav';
+}
+
+}
+.dropdown__trigger{
+  color:black;
+  text-decoration: none;
+
+}
+#dropdown-fb-login-btn{
+line-height: 40px;
+}
+
+#ri-login-dropdown-fb{
+
+width:50%;
+float:right;
+
+ background:linear-gradient(-180deg,#3b5998 0%, #28A6FF 100%); 
+  
+
+}
+
+#ri-login-fb-btn{
+width:100%;
+height:42px;
+color:white;
+border-radius:0;
+border-style: none;
+
+ background:linear-gradient(-180deg,#3b5998 0%, #28A6FF 100%); 
+
+}
+#ri-dropdown-pass-segment{
+  
+border-bottom:0;
+
+}
+#ri-login-dropdown-email{
+  width:50%;
+  float: left;
+  background:white;
+}
+#ri-login-email-btn{
+  
+  color:#525252;
+  border-radius:0;
+  border-style:none;
+  width:100%;
+  height: 42px;
+  background: white;
+}
+
+#dropdown-login-buttons{
+  display:block;
+  border: 0;
+  :hover{
+cursor:pointer;
+
+  }
+}
+
+#loginPass{
+  
+
+}
+#loginEmail{
+  border-bottom:1px solid white;
+
+}
+
+@-webkit-keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
+}
+

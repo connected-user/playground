@@ -1,0 +1,44 @@
+.btn-hamburger {
+  display: inline-block;
+  width: 30px;
+  float: right;
+  margin: 12px;
+
+  .btn-bar {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    transition: 200ms ease;
+  }
+
+  .top-bar {
+
+  }
+
+  .middle-bar {
+    margin: 7px 0;
+  }
+
+  .bottom-bar {
+
+  }
+
+  &:hover {
+
+    .top-bar {
+      transform: rotate(37deg);
+      transform-origin: 0%;
+    }
+
+    .middle-bar {
+      opacity: 0;
+    }
+
+    .bottom-bar {
+      transform: rotate(-37deg);
+      transform-origin: 0%;
+    }
+
+  }
+}

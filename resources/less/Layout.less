@@ -1,0 +1,73 @@
+@import "mediaQuery";
+@import (reference) "fontWeights";
+#app {
+  font-size: 1.5em;
+  
+}
+
+@navHeight: 42px;
+@desktopWidth: 1024px;
+
+.ri-top-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: @navHeight;
+  background:#fbfbfb;
+  
+  border-bottom: 1px solid #ccc;
+  z-index: 10;
+}
+
+.ri-content{
+  margin-top: @navHeight;
+}
+
+.zero-margin{
+  
+margin-top: 0;
+
+}
+
+.ri-page{
+  padding: 20px 40px;
+  margin: 0 auto;
+
+  .page-title {
+    font-size: 2em;
+    font-weight: @thin;
+  }
+
+  @media @desktop {
+    // width: @desktopWidth;
+  }
+}
+
+.ri-page.ri-full-page{
+  width: auto;
+  // padding: 20px;
+  margin: 0;
+}
+
+.ri-carousel-page{
+  
+
+
+position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    
+    width: 100%;
+      height: 100%;
+    
+}
+
+.slick-dots{
+  
+bottom: 400px;
+
+
+}

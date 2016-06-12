@@ -1,0 +1,21 @@
+
+1. INSTALL SPA Development Server
+commands:
+npm install -g stormpath-spa-dev-server
+
+
+2. CONFIGURE WITH ENVIRONMENT VARIABLES
+commands:
+export STORMPATH_CLIENT_APIKEY_ID=1VUEO7W5ZHVBZ2ETS4E3X1B6E
+export STORMPATH_CLIENT_APIKEY_SECRET=xQjFpFXLsfJwIOhyfhuaaCXi5WnCnxjAt66bT/uLnwI
+export STORMPATH_APPLICATION_HREF=https://api.stormpath.com/v1/applications/6aExjMz40lxpcPCMGMxqd6
+
+
+3. Build files and make the sure the built directory has a copy of index.html and stormpath-sdk-react.min.js
+commands:
+npm run build
+
+
+
+4. Point spa dev server to built files to run the stormpath test server properly.
+stormpath-spa-dev-server ~/path/to/dist/ <--***path to your built files***
