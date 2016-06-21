@@ -20,9 +20,10 @@
   font-family: 'Yantramanav';
 
   &:hover {
-    outline: 1px solid #848484;
+    outline: 1px solid rgba(132, 132, 132, 0.57);
+    transition: 400ms ease;
     .photo-score {
-      border-color: #848484;
+      border-color: rgba(132, 132, 132, 0.57);
     }
 
     .photo-controls{
@@ -128,8 +129,6 @@
     background: #fbfbfb;
     border-radius: 0 0 0px 0px;
     border-top: 1px solid;
-    border-right:1px solid;
-    border-left:1px solid;
     border-bottom:1px solid;
     & > * {
       display: inline-block;
@@ -165,12 +164,12 @@
 
   .photo-score{
     position: absolute;
-    bottom: 32px;
+    bottom: 34px;
     right: -18px;
-    border-radius: 0px;
+    border-radius: 20px;
     width: 35px;
     height: 35px;
-    border: 1px solid rgba(0, 0, 0, 0.36);
+    border: 1px solid #ccc;
     background: white;
     background-size: 25px;
     color: #000;

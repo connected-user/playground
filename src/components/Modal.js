@@ -6,15 +6,16 @@ class Modal extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { active: false,data: [] };
+    this.state = { active: false};
     this.triggerClose = this.triggerClose.bind(this);
   }
 
   componentDidMount() {
+    $(document.body).css("overflow","hidden");
     setTimeout(() => {
       this.setState({ active: true });
     }, 100);
-    console.log(this.props.location.pathname)
+    
   }
 
   triggerClose() {
@@ -24,35 +25,16 @@ class Modal extends React.Component {
     }, ANIMATION_DELAY);
   }
 
+ 
 
-  getId(){
-  var str = this.props.location.pathname;
-  var pos = str.lastIndexOf("/");
-  pos++;
-  var id = str.slice(pos);
-  return id;
-  }
+  componentWillUnmount(){
 
-
-  componentWillMount(){
-
-    var id = this.getId();
-    var target = "http://risedevapi1.herokuapp.com/feed/" + id;
-    /*console.log(target);*/
-fetch(target)
-        .then((response) => response.json())
-        .then((data) => {
-          /*console.log(data);*/
-         this.setState({data: data});
-          
-        })
-        .catch((error) => console.warn(error));
-
+    $(document.body).css("overflow","initial");
 
   }
 
   render() {
-    this.getId();
+    
     const { active } = this.state;
     const modalClass = active ? 'modal active' : 'modal';
     

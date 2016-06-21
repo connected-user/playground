@@ -1,3 +1,5 @@
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 module.exports = {
   entry: './main.js',
   output: {
@@ -17,7 +19,16 @@ module.exports = {
       },
       { test: /\.less$/, loader: 'style!css!less' },
       { test: /\.(png|jpg|gif)$/, loader: 'url-loader?limit=1000000' },
-      { test: /\.(svg|ttf|woff|eot)/, loader: 'file-loader' }
-    ]
-  }
-};
+      {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract('style', 'css')
+      },
+      {
+        test: /\.(eot|svg|ttf|woff(2)?)(\?v=\d+\.\d+\.\d+)?/,
+        loader: 'url'
+      }
+    ] },
+  plugins: [
+    new ExtractTextPlugin('bundle.css')
+  ]
+  };

@@ -66,7 +66,7 @@ class PhotoFeed extends React.Component {
     //this.refreshTimer2 = setTimeout( () =>{ this.refreshMasonry(); }, 3000);
     //this.refreshTimer3 = setTimeout( () =>{ this.refreshMasonry(); }, 1000);
 
-    fetch('http://risedevapi1.herokuapp.com/feed/')
+    fetch('https://risedevapi1.herokuapp.com/feed/')
         .then((response) => response.json())
         .then((data) => {
           this.setState({data: data.content});

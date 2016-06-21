@@ -4,10 +4,11 @@
   .photo-details-left {
     position: absolute;
     top: 0;
-    right: 300px;
+    right: 400px;
     left: 0;
     bottom: 0;
     padding: 15px;
+    text-align: center;
   }
 
   .photo-details-right {
@@ -15,8 +16,203 @@
     top: 0;
     right: 0;
     bottom: 0;
-    width: 300px;
+    width: 400px;
     padding: 15px;
-    background: fade(#222, 80%);
+    background: rgba(255, 255, 255, 0.96);
+
+  .photo-title{
+    font-size: 2.2em;
+    color: #525252;
+    font-weight: 100;
+    padding-bottom: 9px;
+    width: 75%;
+    margin-top: -12px;
+    margin-left: -4px;
+}
+
+.photo-likes{
+    border: 1px solid #ffcc00;
+    text-align: center;
+    position: absolute;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    padding-left: 3px;
+    padding-top: 1px;
+    padding-right: 3px;
+    margin-left: 2px;
+}
+.photo-likes-number{
+  
+
+
+
+}
+
+  .photo-details-like{
+    color: #ff7f7f;
+    font-size: 16px;
+        padding-left: 3px;
+    padding-top: 2px;
+      }
+  .photo-details-like:hover{
+  cursor: pointer;
+  color: #e44545;
+      -o-transition: color 1s; 
+    -moz-transition: color 1s;
+    -webkit-transition: color 1s;
+
+  }
+    .photo-description{
+
+      font-size: 16px;
+      padding-top: 15px;
+      color: rgba(82, 82, 82, 0.74);
+      float: left;
+      border-top: 1px solid #ffcc00;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ffcc00;
+      margin-bottom: 15px;
+    }
+
+  .comments-container{
+
+    #photo-comments-wrapper{
+
+      .photo-comment-submit{
+        text-align: center;
+        margin-bottom: 15px;
+
+        #commentSubmitForm{
+          resize:none;
+          width:100%;
+          border:1px dashed rgba(82, 82, 82, 0.54);
+          font-family:'Yantramanav';
+          font-weight:300;
+          color:#525252;
+          font-size:  17px;
+          -webkit-transition: border-style 1s;
+          transition: border-style 1s;
+          border-style:dashed;
+        }
+
+        #commentSubmitLabel{
+          color:#525252;
+        }
+
+        #commentSubmitForm:focus{
+          outline: none;
+          border-style:solid;
+          -webkit-transition: border-style 1s;
+          transition: border-style 1s;
+        }
+
+        #commentSubmitButton{
+          background:#ffcc00;
+          border-style:none;
+          color:white;
+          border-radius:0px;
+          -webkit-transition: border-radius 0.3s;
+          transition: border-radius 0.3s;
+          height: 25px;
+        }
+
+        #commentSubmitButton:hover{
+          border-radius:5px;
+          cursor: pointer;
+        }
+      }
+
+      .photo-comment-list{
+
+        .comment-avatar{
+          width:40px;
+          float: left;
+          margin-right:3px;
+        }
+
+        .comment-avatar>img{
+          width:100%;
+        }
+
+        .photo-comment{
+          display: block;
+          position: relative;
+
+          .comment-content{
+            margin-left: 48px;
+            border-radius: 0px;
+            padding: 5px;
+            right: 0;
+            top: 0;
+            border: 1px solid #b3b3b3;
+            margin-bottom: 10px;
+            background: #fbfbfb;
+          }
+
+          .comment-text{
+            color: rgba(82, 82, 82, 0.63);
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 3px;
+          }
+
+          .comment-date{
+            color: rgba(82, 82, 82, 0.88);
+            float: right;
+            margin-top: 3px;
+            margin-right: 5px;
+            font-size: 12PX;
+          }
+          .comment-arrow{
+            position: absolute;
+            top: 13px;
+            left: 42px;
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-right: 8px solid #fbfbfb;
+          }
+          .comment-arrow2{
+            position: absolute;
+            top: 13px;
+            left: 41px;
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-right: 8px solid #8e8e8e;
+          }
+
+              
+          .comment-author{
+            color:#525252;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 14px;
+            margin-top: -1px;
+          }
+        }
+      }
+    } 
+  }
+
+    .author-photo{
+      width: 15%;
+      position: relative;
+      float: left;
+    }
+
+    .author-name{
+      padding-top: 18px;
+      padding-left: 60px;
+      color: #ffcc00;
+      font-weight: 300;
+    }
+
+    .author-details{
+      padding-bottom: 29px;
+    }
   }
 }
